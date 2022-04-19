@@ -1,4 +1,6 @@
 const path = require('path');
+// const { HotModuleReplacementPlugin } = require('webpack');
+// const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 //для запуска без express
 // const HtmlWebpackPlugin = require('html-webpack-plugin')
@@ -15,13 +17,31 @@ function setDevtools() {
 module.exports = {
 
     mode: NODE_ENV ? NODE_ENV : 'development',
-    entry: path.resolve(__dirname, '../src/client/index.jsx'),
+    entry: [
+        path.resolve(__dirname, '../src/client/index.jsx'),
+    ],
     output: {
         filename: 'client.js',
         path: path.resolve(__dirname, '../dist/client'),
     },
     module: {
-        rules: [{ test: /\.[tj]sx$/, use: ['ts-loader'] }],
+        rules: [
+            { test: /\.[tj]sx$/, use: ['ts-loader'] },
+            {
+                test: /\.css$/,
+                use: ['style-loader', {
+                    loader: 'css-loader',
+                    options: {
+                        modules: {
+                            mode: 'local',
+                            localIdentName: '[name]__[local]--[hash:base64:5]',
+
+                        }
+                    }
+
+                }]
+            }
+        ],
     },
     resolve: {
         extensions: ['.js', '.jsx', '.tsx', '.ts', '.json'],
