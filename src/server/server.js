@@ -1,21 +1,19 @@
-import express from 'express'
-// const express = require('express')
-import ReactDOM from 'react-dom/server'
-// const ReactDom = require('react-dom/server')
-import Header from '../shared/Header.jsx'
-import { indexTemplate } from './indexTemplate.js'
+import express from "express";
+import ReactDOM from "react-dom/server";
+import App from "../App";
+import { indexTemplate } from "./indexTemplate.js";
 
-const app = express()
-const port = 3000
+const app = express();
+const port = 3000;
 
-app.use('/static', express.static('./dist/client'))
+app.use("/static", express.static("./dist/client"));
 
-app.get('/', (req, res) => {
-    res.send(indexTemplate(ReactDOM.renderToString(Header())))
-})
+app.get("/", (req, res) => {
+    res.send(indexTemplate(ReactDOM.renderToString(App())));
+});
 
 // app.set('port', process.env.PORT || 3001);
 
 app.listen(port, () => {
-    console.log(`App listening on port ${port}`)
-})
+    console.log(`App listening on port ${port}`);
+});

@@ -21,6 +21,8 @@
   "homepage": "https://github.com/6apsyk/React_Skillbox#readme",
   "devDependencies": {
     "@types/jest": "^27.4.1",
+    "@types/react": "^18.0.8",
+    "@types/react-dom": "^18.0.3",
     "clean-webpack-plugin": "^4.0.0",
     "cross-env": "^7.0.3",
     "css-loader": "^3.4.2",
