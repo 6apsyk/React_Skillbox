@@ -55,6 +55,6 @@ button {
 
     .card:hover,
     .card:focus-within {
-        border: 1px solid var(--grey-demi-dark);
+        outline: 1px solid var(--grey-demi-dark);
     }
 }
