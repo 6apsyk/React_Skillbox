@@ -48,3 +48,5 @@ const homeTask: MyPartial<IHomeTask> = {
 type MyPartial<T> = {
     [N in keyof T]?: T[N] extends object ? MyPartial<T[N]> : T[N]
 }
+
+[1,2,3].reduce
