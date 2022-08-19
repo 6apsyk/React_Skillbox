@@ -6,7 +6,7 @@ const GLOBAL_CSS_REGEXP = /\.global\.css$/;
 
 module.exports = {
     //For Webpack 5, replace target: 'node' with the externalsPreset object:
-    // target: 'node',
+    // target: "node",
     externalsPresets: { node: true }, // in order to ignore built-in modules like path, fs, etc.
     externals: [nodeExternals()], // in order to ignore all modules in node_modules folder
     mode: NODE_ENV ? NODE_ENV : "development",
@@ -21,6 +21,7 @@ module.exports = {
     module: {
         rules: [
             { test: /\.[tj]sx$/, use: ["ts-loader"] },
+            { test: /\.[tj]s$/, use: ["ts-loader"] },
             {
                 test: /\.css$/,
                 use: [

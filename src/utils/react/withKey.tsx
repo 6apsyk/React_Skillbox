@@ -1,6 +1,6 @@
 import React from "react";
 
-const withIdKey = withKey("id");
+export const withIdKey = withKey("id");
 
 export function withKey(key?: string) {
     return <E extends { [key: string]: object }, T extends React.ComponentType<E>>(component: T) =>
