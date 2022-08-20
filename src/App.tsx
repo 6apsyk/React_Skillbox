@@ -7,15 +7,19 @@ import { MyList } from "./shared/GenericList";
 import { Header } from "./shared/Header";
 import { Layout } from "./shared/Layout";
 import { merge } from "./utils/js/merge";
-import { generateId } from "./utils/react/generateRandomIndex";
+import { generateId, generateRandomString } from "./utils/react/generateRandomIndex";
 
-const LIST = [{ value: "some" }, { value: "othersome" }, { value: "somesome" }].map(generateId); // добавление уникальных ключей
+const LIST = [{ value: "someeeeee" }, { value: "othersome" }, { value: "somesome" }].map(generateId); // добавление уникальных ключей
 
-function App() {
+const App = () => {
     const [list, setList] = React.useState(LIST);
 
     const handleItemClick = (id: string) => {
-        console.log(id);
+        setList(list => list.filter(el => el.id !== id));
+    };
+
+    const handleAddClick = () => {
+        setList(list.concat(generateId({ value: generateRandomString() })));
     };
 
     return (
@@ -23,10 +27,11 @@ function App() {
             <Header />
             <Content>
                 <CardList />
+                <button onClick={handleAddClick}>ADD</button>
                 <MyList list={list.map(merge({ onClick: handleItemClick }))} />
             </Content>
         </Layout>
     );
-}
+};
 
 export default hot(() => <App />);
