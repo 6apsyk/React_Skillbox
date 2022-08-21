@@ -139,6 +139,16 @@ eval("// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../.
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./src/shared/Dropdown/dropdown.css":
+/*!************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./src/shared/Dropdown/dropdown.css ***!
+  \************************************************************************************************************/
+/***/ ((module, exports, __webpack_require__) => {
+
+eval("// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\nexports = ___CSS_LOADER_API_IMPORT___(false);\n// Module\nexports.push([module.id, \".dropdown__container--a5Jzh {\\r\\n    width: 100%;\\r\\n    flex: 1 1 0%;\\r\\n}\\r\\n.dropdown__listContainer--YYYB3 {\\r\\n    position: relative;\\r\\n}\\r\\n\\r\\n.dropdown__list--23slg {\\r\\n    position: absolute;\\r\\n    left: 0;\\r\\n    right: 0;\\r\\n    width: 100%;\\r\\n    height: 100%;\\r\\n}\\r\\n\", \"\"]);\n// Exports\nexports.locals = {\n\t\"container\": \"dropdown__container--a5Jzh\",\n\t\"listContainer\": \"dropdown__listContainer--YYYB3\",\n\t\"list\": \"dropdown__list--23slg\"\n};\nmodule.exports = exports;\n\n\n//# sourceURL=webpack://skill-box-react/./src/shared/Dropdown/dropdown.css?./node_modules/css-loader/dist/cjs.js??ruleSet%5B1%5D.rules%5B2%5D.use%5B1%5D");
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./src/shared/Header/SearchBlock/searchblock.css":
 /*!*************************************************************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./src/shared/Header/SearchBlock/searchblock.css ***!
@@ -316,6 +326,16 @@ eval("var api = __webpack_require__(/*! !../../../node_modules/style-loader/dist
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("var api = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\");\n            var content = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./content.css */ \"./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./src/shared/Content/content.css\");\n\n            content = content.__esModule ? content.default : content;\n\n            if (typeof content === 'string') {\n              content = [[module.id, content, '']];\n            }\n\nvar options = {};\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = api(content, options);\n\nvar exported = content.locals ? content.locals : {};\n\n\nif (true) {\n  if (!content.locals) {\n    module.hot.accept(\n      /*! !!../../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./content.css */ \"./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./src/shared/Content/content.css\",\n      function () {\n        var newContent = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./content.css */ \"./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./src/shared/Content/content.css\");\n\n              newContent = newContent.__esModule ? newContent.default : newContent;\n\n              if (typeof newContent === 'string') {\n                newContent = [[module.id, newContent, '']];\n              }\n\n              update(newContent);\n      }\n    )\n  }\n\n  module.hot.dispose(function() { \n    update();\n  });\n}\n\nmodule.exports = exported;\n\n//# sourceURL=webpack://skill-box-react/./src/shared/Content/content.css?");
+
+/***/ }),
+
+/***/ "./src/shared/Dropdown/dropdown.css":
+/*!******************************************!*\
+  !*** ./src/shared/Dropdown/dropdown.css ***!
+  \******************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("var api = __webpack_require__(/*! !../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\");\n            var content = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./dropdown.css */ \"./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./src/shared/Dropdown/dropdown.css\");\n\n            content = content.__esModule ? content.default : content;\n\n            if (typeof content === 'string') {\n              content = [[module.id, content, '']];\n            }\n\nvar options = {};\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = api(content, options);\n\nvar exported = content.locals ? content.locals : {};\n\n\nif (true) {\n  if (!content.locals) {\n    module.hot.accept(\n      /*! !!../../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./dropdown.css */ \"./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./src/shared/Dropdown/dropdown.css\",\n      function () {\n        var newContent = __webpack_require__(/*! !!../../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./dropdown.css */ \"./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./src/shared/Dropdown/dropdown.css\");\n\n              newContent = newContent.__esModule ? newContent.default : newContent;\n\n              if (typeof newContent === 'string') {\n                newContent = [[module.id, newContent, '']];\n              }\n\n              update(newContent);\n      }\n    )\n  }\n\n  module.hot.dispose(function() { \n    update();\n  });\n}\n\nmodule.exports = exported;\n\n//# sourceURL=webpack://skill-box-react/./src/shared/Dropdown/dropdown.css?");
 
 /***/ }),
 
@@ -600,6 +620,17 @@ eval("\r\nif (false) {}\r\nelse if (false) {}\r\nelse if (typeof window === 'und
 
 /***/ }),
 
+/***/ "./node_modules/react-hot-loader/patch.js":
+/*!************************************************!*\
+  !*** ./node_modules/react-hot-loader/patch.js ***!
+  \************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("\r\nif (false) {}\r\nelse {\r\n    module.exports = __webpack_require__(/*! ./dist/react-hot-loader.development.js */ \"./node_modules/react-hot-loader/dist/react-hot-loader.development.js\");\r\n}\r\n\n\n//# sourceURL=webpack://skill-box-react/./node_modules/react-hot-loader/patch.js?");
+
+/***/ }),
+
 /***/ "./node_modules/react-hot-loader/root.js":
 /*!***********************************************!*\
   !*** ./node_modules/react-hot-loader/root.js ***!
@@ -772,7 +803,7 @@ eval("\r\n/**\r\n * Based heavily on https://github.com/webpack/webpack/blob/\r\
 /***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
 "use strict";
-eval("\r\nvar __importDefault = (this && this.__importDefault) || function (mod) {\r\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\r\n};\r\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\r\nvar react_1 = __importDefault(__webpack_require__(/*! react */ \"./node_modules/react/index.js\"));\r\nvar root_1 = __webpack_require__(/*! react-hot-loader/root */ \"./node_modules/react-hot-loader/root.js\");\r\n__webpack_require__(/*! ./main.global.css */ \"./src/main.global.css\");\r\nvar CardsList_1 = __webpack_require__(/*! ./shared/CardsList */ \"./src/shared/CardsList/index.ts\");\r\nvar Content_1 = __webpack_require__(/*! ./shared/Content */ \"./src/shared/Content/index.ts\");\r\nvar GenericList_1 = __webpack_require__(/*! ./shared/GenericList */ \"./src/shared/GenericList/index.ts\");\r\nvar Header_1 = __webpack_require__(/*! ./shared/Header */ \"./src/shared/Header/index.ts\");\r\nvar Layout_1 = __webpack_require__(/*! ./shared/Layout */ \"./src/shared/Layout/index.ts\");\r\nvar merge_1 = __webpack_require__(/*! ./utils/js/merge */ \"./src/utils/js/merge.ts\");\r\nvar generateRandomIndex_1 = __webpack_require__(/*! ./utils/react/generateRandomIndex */ \"./src/utils/react/generateRandomIndex.ts\");\r\nvar LIST = [{ value: \"someeeeee\" }, { value: \"othersome\" }, { value: \"somesome\" }].map(generateRandomIndex_1.generateId); // добавление уникальных ключей\r\nvar App = function () {\r\n    var _a = react_1.default.useState(LIST), list = _a[0], setList = _a[1];\r\n    var handleItemClick = function (id) {\r\n        setList(function (list) { return list.filter(function (el) { return el.id !== id; }); });\r\n    };\r\n    var handleAddClick = function () {\r\n        setList(list.concat((0, generateRandomIndex_1.generateId)({ value: (0, generateRandomIndex_1.generateRandomString)() })));\r\n    };\r\n    return (react_1.default.createElement(Layout_1.Layout, null,\r\n        react_1.default.createElement(Header_1.Header, null),\r\n        react_1.default.createElement(Content_1.Content, null,\r\n            react_1.default.createElement(CardsList_1.CardList, null),\r\n            react_1.default.createElement(\"button\", { onClick: handleAddClick }, \"ADD\"),\r\n            react_1.default.createElement(GenericList_1.MyList, { list: list.map((0, merge_1.merge)({ onClick: handleItemClick })) }))));\r\n};\r\nexports[\"default\"] = (0, root_1.hot)(function () { return react_1.default.createElement(App, null); });\r\n\n\n//# sourceURL=webpack://skill-box-react/./src/App.tsx?");
+eval("\r\nvar __importDefault = (this && this.__importDefault) || function (mod) {\r\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\r\n};\r\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\r\nvar react_1 = __importDefault(__webpack_require__(/*! react */ \"./node_modules/react/index.js\"));\r\nvar root_1 = __webpack_require__(/*! react-hot-loader/root */ \"./node_modules/react-hot-loader/root.js\");\r\n__webpack_require__(/*! ./main.global.css */ \"./src/main.global.css\");\r\nvar CardsList_1 = __webpack_require__(/*! ./shared/CardsList */ \"./src/shared/CardsList/index.ts\");\r\nvar Content_1 = __webpack_require__(/*! ./shared/Content */ \"./src/shared/Content/index.ts\");\r\nvar Dropdown_1 = __webpack_require__(/*! ./shared/Dropdown */ \"./src/shared/Dropdown/index.ts\");\r\nvar GenericList_1 = __webpack_require__(/*! ./shared/GenericList */ \"./src/shared/GenericList/index.ts\");\r\nvar Header_1 = __webpack_require__(/*! ./shared/Header */ \"./src/shared/Header/index.ts\");\r\nvar Layout_1 = __webpack_require__(/*! ./shared/Layout */ \"./src/shared/Layout/index.ts\");\r\nvar merge_1 = __webpack_require__(/*! ./utils/js/merge */ \"./src/utils/js/merge.ts\");\r\nvar generateRandomIndex_1 = __webpack_require__(/*! ./utils/react/generateRandomIndex */ \"./src/utils/react/generateRandomIndex.ts\");\r\nvar LIST = [\r\n    { text: \"somee\", As: \"li\" },\r\n    { text: \"othersome\", As: \"li\" },\r\n    { text: \"somesome\", As: \"li\" },\r\n].map(generateRandomIndex_1.generateId); // добавление уникальных ключей\r\nvar App = function () {\r\n    var _a = react_1.default.useState(LIST), list = _a[0], setList = _a[1];\r\n    var handleItemClick = function (id) {\r\n        setList(function (list) { return list.filter(function (el) { return el.id !== id; }); });\r\n    };\r\n    var handleAddClick = function () {\r\n        setList(list.concat((0, generateRandomIndex_1.generateId)({ text: (0, generateRandomIndex_1.generateRandomString)(), As: \"li\" })));\r\n    };\r\n    return (react_1.default.createElement(Layout_1.Layout, null,\r\n        react_1.default.createElement(Header_1.Header, null),\r\n        react_1.default.createElement(Content_1.Content, null,\r\n            react_1.default.createElement(CardsList_1.CardList, null),\r\n            react_1.default.createElement(\"div\", { style: { padding: 50 } },\r\n                react_1.default.createElement(Dropdown_1.Dropdown, { isOpen: true, button: react_1.default.createElement(\"button\", null, \"TEST\") },\r\n                    react_1.default.createElement(GenericList_1.GenerateList, { list: list.map((0, merge_1.merge)({ onClick: handleItemClick })) }))))));\r\n};\r\nexports[\"default\"] = (0, root_1.hot)(function () { return react_1.default.createElement(App, null); });\r\n\n\n//# sourceURL=webpack://skill-box-react/./src/App.tsx?");
 
 /***/ }),
 
@@ -1029,6 +1060,28 @@ eval("\r\nvar __createBinding = (this && this.__createBinding) || (Object.create
 
 /***/ }),
 
+/***/ "./src/shared/Dropdown/Dropdown.tsx":
+/*!******************************************!*\
+  !*** ./src/shared/Dropdown/Dropdown.tsx ***!
+  \******************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+eval("\r\nvar __importDefault = (this && this.__importDefault) || function (mod) {\r\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\r\n};\r\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\r\nexports.Dropdown = void 0;\r\nvar react_1 = __importDefault(__webpack_require__(/*! react */ \"./node_modules/react/index.js\"));\r\nvar dropdown_css_1 = __importDefault(__webpack_require__(/*! ./dropdown.css */ \"./src/shared/Dropdown/dropdown.css\"));\r\nfunction Dropdown(_a) {\r\n    var children = _a.children, button = _a.button, isOpen = _a.isOpen, onClose = _a.onClose, onOpen = _a.onOpen;\r\n    var _b = react_1.default.useState(isOpen), isDropdownOpen = _b[0], setIsDropdownOpen = _b[1];\r\n    var handleOpen = function () {\r\n        if (isOpen === undefined) {\r\n            setIsDropdownOpen(function (value) { return !value; });\r\n        }\r\n    };\r\n    return (react_1.default.createElement(\"div\", { className: dropdown_css_1.default.container },\r\n        react_1.default.createElement(\"div\", { onClick: handleOpen }, button),\r\n        isDropdownOpen && (react_1.default.createElement(\"div\", { className: dropdown_css_1.default.listContainer },\r\n            react_1.default.createElement(\"div\", { className: dropdown_css_1.default.list, onClick: function () { return setIsDropdownOpen(false); } }, children)))));\r\n}\r\nexports.Dropdown = Dropdown;\r\n\n\n//# sourceURL=webpack://skill-box-react/./src/shared/Dropdown/Dropdown.tsx?");
+
+/***/ }),
+
+/***/ "./src/shared/Dropdown/index.ts":
+/*!**************************************!*\
+  !*** ./src/shared/Dropdown/index.ts ***!
+  \**************************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+eval("\r\nvar __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {\r\n    if (k2 === undefined) k2 = k;\r\n    var desc = Object.getOwnPropertyDescriptor(m, k);\r\n    if (!desc || (\"get\" in desc ? !m.__esModule : desc.writable || desc.configurable)) {\r\n      desc = { enumerable: true, get: function() { return m[k]; } };\r\n    }\r\n    Object.defineProperty(o, k2, desc);\r\n}) : (function(o, m, k, k2) {\r\n    if (k2 === undefined) k2 = k;\r\n    o[k2] = m[k];\r\n}));\r\nvar __exportStar = (this && this.__exportStar) || function(m, exports) {\r\n    for (var p in m) if (p !== \"default\" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);\r\n};\r\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\r\n__exportStar(__webpack_require__(/*! ./Dropdown */ \"./src/shared/Dropdown/Dropdown.tsx\"), exports);\r\n\n\n//# sourceURL=webpack://skill-box-react/./src/shared/Dropdown/index.ts?");
+
+/***/ }),
+
 /***/ "./src/shared/GenericList/GenericList.tsx":
 /*!************************************************!*\
   !*** ./src/shared/GenericList/GenericList.tsx ***!
@@ -1036,7 +1089,7 @@ eval("\r\nvar __createBinding = (this && this.__createBinding) || (Object.create
 /***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
 "use strict";
-eval("\r\nvar __importDefault = (this && this.__importDefault) || function (mod) {\r\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\r\n};\r\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\r\nexports.MyList = void 0;\r\nvar react_1 = __importDefault(__webpack_require__(/*! react */ \"./node_modules/react/index.js\"));\r\nfunction MyList(_a) {\r\n    var list = _a.list;\r\n    return (react_1.default.createElement(\"ul\", null, list.map(function (item) { return (react_1.default.createElement(\"li\", { onClick: function () { return item.onClick(item.id); }, key: item.id }, item.value)); })));\r\n}\r\nexports.MyList = MyList;\r\n\n\n//# sourceURL=webpack://skill-box-react/./src/shared/GenericList/GenericList.tsx?");
+eval("\r\nvar __importDefault = (this && this.__importDefault) || function (mod) {\r\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\r\n};\r\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\r\nexports.GenerateList = void 0;\r\nvar react_1 = __importDefault(__webpack_require__(/*! react */ \"./node_modules/react/index.js\"));\r\nvar noop = function () { }; // что не делать проверку на onClick\r\nfunction GenerateList(_a) {\r\n    var list = _a.list;\r\n    return (react_1.default.createElement(\"ul\", null, list.map(function (_a) {\r\n        var _b = _a.As, As = _b === void 0 ? \"div\" : _b, className = _a.className, _c = _a.onClick, onClick = _c === void 0 ? noop : _c, text = _a.text, id = _a.id, href = _a.href;\r\n        return (react_1.default.createElement(As, { className: className, onClick: function () { return onClick(id); }, key: id, href: href }, text));\r\n    })));\r\n}\r\nexports.GenerateList = GenerateList;\r\n\n\n//# sourceURL=webpack://skill-box-react/./src/shared/GenericList/GenericList.tsx?");
 
 /***/ }),
 
@@ -1270,7 +1323,7 @@ eval("\r\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\r\n
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("4ead48ed5271bd8ed383")
+/******/ 		__webpack_require__.h = () => ("fa61878d925dd53f8f85")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
@@ -2253,7 +2306,8 @@ eval("\r\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\r\n
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	__webpack_require__("./src/client/index.jsx");
-/******/ 	var __webpack_exports__ = __webpack_require__("./node_modules/webpack-hot-middleware/client.js?path=http://localhost:3001/static/__webpack_hmr");
+/******/ 	__webpack_require__("./node_modules/webpack-hot-middleware/client.js?path=http://localhost:3001/static/__webpack_hmr");
+/******/ 	var __webpack_exports__ = __webpack_require__("./node_modules/react-hot-loader/patch.js");
 /******/ 	
 /******/ })()
 ;

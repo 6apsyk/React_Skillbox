@@ -1,21 +1,26 @@
 import React from "react";
 
 interface IItem {
-    value: string;
     id: string;
-    onClick: (id: string) => void;
+    text: string;
+    onClick?: (id: string) => void;
+    className?: string;
+    As?: "a" | "li" | "button" | "div";
+    href?: string;
 }
-interface IMyListProps {
+interface IGenerateList {
     list: IItem[];
 }
 
-export function MyList({ list }: IMyListProps) {
+const noop = () => {}; // что не делать проверку на onClick
+
+export function GenerateList({ list }: IGenerateList) {
     return (
         <ul>
-            {list.map((item: IItem) => (
-                <li onClick={() => item.onClick(item.id)} key={item.id}>
-                    {item.value}
-                </li>
+            {list.map(({ As = "div", className, onClick = noop, text, id, href }) => (
+                <As className={className} onClick={() => onClick(id)} key={id} href={href}>
+                    {text}
+                </As>
             ))}
         </ul>
     );
