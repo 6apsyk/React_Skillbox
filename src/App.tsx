@@ -36,12 +36,12 @@ const App = () => {
                 {/* <ul>
                     <GenerateList list={list.map(merge({ onClick: handleItemClick }))} />
                 </ul> */}
-                <div style={{ padding: 50 }}>
-                    <Dropdown isOpen button={<button>TEST</button>}>
-                        <GenerateList list={list.map(merge({ onClick: handleItemClick }))} />
-                    </Dropdown>
-                </div>
             </Content>
+            <div>
+                <Dropdown isOpen={false} button={<button>TEST</button>}>
+                    <CardList />
+                </Dropdown>
+            </div>
         </Layout>
     );
 };
