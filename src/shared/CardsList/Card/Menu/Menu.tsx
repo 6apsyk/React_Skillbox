@@ -1,9 +1,21 @@
 import React from "react";
+import { generateId } from "../../../../utils/react/generateRandomIndex";
 import { Dropdown } from "../../../Dropdown";
 import { GenerateList } from "../../../GenericList";
 import styles from "./menu.css";
 
+const LIST = [
+    { text: "Комментарии", As: "div" as const },
+    { text: "Поделиться", As: "div" as const },
+    { text: "Скрыть", As: "div" as const },
+    { text: "Сохранить", As: "div" as const },
+    { text: "Пожаловаться", As: "div" as const },
+    { text: "Закрыть", As: "div" as const },
+].map(generateId);
+
 export function Menu() {
+    const [list, setList] = React.useState(LIST);
+
     const getButton = () => {
         return (
             <button className={styles.menuButton}>
@@ -19,14 +31,7 @@ export function Menu() {
     return (
         <div className={styles.menu}>
             <Dropdown button={getButton()}>
-                <GenerateList
-                    list={[
-                        { id: "1", text: "sdsada", As: "div" },
-                        { id: "2", text: "qwerty", As: "div" },
-                        { id: "3", text: "sdsada", As: "div" },
-                        { id: "4", text: "qwerty", As: "div" },
-                    ]}
-                />
+                <GenerateList list={list} />
             </Dropdown>
         </div>
     );
