@@ -20,7 +20,7 @@ const App = () => {
     const [list, setList] = React.useState(LIST);
 
     const handleItemClick = (id: string) => {
-        setList(list => list.filter(el => el.id !== id));
+        setList((list) => list.filter((el) => el.id !== id));
     };
 
     const handleAddClick = () => {
@@ -37,11 +37,11 @@ const App = () => {
                     <GenerateList list={list.map(merge({ onClick: handleItemClick }))} />
                 </ul> */}
             </Content>
-            <div>
+            {/* <div>
                 <Dropdown isOpen={false} button={<button>TEST</button>}>
                     <CardList />
                 </Dropdown>
-            </div>
+            </div> */}
         </Layout>
     );
 };
