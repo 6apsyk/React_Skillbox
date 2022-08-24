@@ -5,12 +5,12 @@ import { GenerateList } from "../../../GenericList";
 import styles from "./menu.css";
 
 const LIST = [
-    { text: "Комментарии", As: "div" as const },
-    { text: "Поделиться", As: "div" as const },
-    { text: "Скрыть", As: "div" as const },
-    { text: "Сохранить", As: "div" as const },
-    { text: "Пожаловаться", As: "div" as const },
-    { text: "Закрыть", As: "div" as const },
+    { text: "Комментарии", As: "div" as const, img: "comments", className: "title" },
+    { text: "Поделиться", As: "div" as const, img: "share", className: "title" },
+    { text: "Скрыть", As: "div" as const, img: "hide", className: "title" },
+    { text: "Сохранить", As: "div" as const, img: "save", className: "title" },
+    { text: "Пожаловаться", As: "div" as const, img: "complain", className: "title" },
+    { text: "Закрыть", As: "div" as const, className: "close" },
 ].map(generateId);
 
 export function Menu() {
