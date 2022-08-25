@@ -18,6 +18,8 @@ interface IGenerateList {
 const noop = () => {}; // что не делать проверку на onClick
 
 export function GenerateList({ list }: IGenerateList) {
+    const color = "#cc6633";
+
     return (
         <ul className={styles.mainBox}>
             {list.map(({ As = "div", className, onClick = noop, text, id, href, img = "" }) => (

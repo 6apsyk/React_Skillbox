@@ -12,6 +12,7 @@ module.exports = {
     mode: NODE_ENV ? NODE_ENV : "development",
     entry: path.resolve(__dirname, "../src/server/server.js"),
     output: {
+        globalObject: "this",
         filename: "server.js",
         path: path.resolve(__dirname, "../dist/server"),
     },

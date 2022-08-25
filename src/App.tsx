@@ -1,5 +1,6 @@
 import React from "react";
 import { hot } from "react-hot-loader/root";
+import useWindowDimensions from "./hooks/useWindowDimensions";
 import "./main.global.css";
 import { CardList } from "./shared/CardsList";
 import { Content } from "./shared/Content";
@@ -18,6 +19,8 @@ const LIST = [
 
 const App = () => {
     const [list, setList] = React.useState(LIST);
+    // const { width, height } = useWindowDimensions();
+    // console.log(width, height);
 
     const handleItemClick = (id: string) => {
         setList((list) => list.filter((el) => el.id !== id));
