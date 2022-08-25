@@ -24,6 +24,7 @@ module.exports = {
         // "./src",
     ],
     output: {
+        globalObject: "this",
         filename: "client.js",
         path: path.resolve(__dirname, "../dist/client"),
         publicPath: "/static/",
