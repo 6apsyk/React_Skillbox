@@ -40,6 +40,9 @@
 .title:hover {
     color: #cc6633;
 }
+.title:hover > svg {
+    fill: #cc6633;
+}
 .close {
     padding-top: 10px;
     padding-bottom: 15px;
