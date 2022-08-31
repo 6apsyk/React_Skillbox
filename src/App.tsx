@@ -23,7 +23,7 @@ const App = () => {
     // console.log(width, height);
 
     const handleItemClick = (id: string) => {
-        setList((list) => list.filter((el) => el.id !== id));
+        setList(list => list.filter(el => el.id !== id));
     };
 
     const handleAddClick = () => {
