@@ -1,2 +1,1 @@
-test('Hello it"s my first test', () => {
-})
+test('Hello it"s my first test', () => {});
