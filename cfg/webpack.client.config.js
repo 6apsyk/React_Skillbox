@@ -26,7 +26,7 @@ module.exports = {
         globalObject: "this",
         filename: "client.js",
         path: path.resolve(__dirname, "../dist/client"),
-        publicPath: "/static/",
+        publicPath: "//localhost:3001/static/",
     },
     module: {
         rules: [
