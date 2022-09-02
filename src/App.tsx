@@ -8,6 +8,7 @@ import { Dropdown } from "./shared/Dropdown";
 import { GenerateList } from "./shared/GenericList";
 import { Header } from "./shared/Header";
 import { Layout } from "./shared/Layout";
+import Text from "./shared/Text/Text";
 import { merge } from "./utils/js/merge";
 import { generateId, generateRandomString } from "./utils/react/generateRandomIndex";
 
@@ -35,16 +36,7 @@ const App = () => {
             <Header />
             <Content>
                 <CardList />
-                {/* <button onClick={handleAddClick}>ADD</button> */}
-                {/* <ul>
-                    <GenerateList list={list.map(merge({ onClick: handleItemClick }))} />
-                </ul> */}
             </Content>
-            {/* <div>
-                <Dropdown isOpen={false} button={<button>TEST</button>}>
-                    <CardList />
-                </Dropdown>
-            </div> */}
         </Layout>
     );
 };
