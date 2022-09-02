@@ -1,7 +1,3 @@
-export enum EIcon {
-    hide = 'hide',
-    save = 'save',
-    complain = 'complain',
-    comment = 'comments',
-    share = 'share'
-}
+
+export type IIcon = 'hide'|'save'|'complain'|'comments'|'share' | ''
+export type IIconSize = 15 | 16

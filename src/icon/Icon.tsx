@@ -2,25 +2,27 @@ import React from "react";
 import Comments from "./Comments/Comments";
 import Complain from "./Complain/Complain";
 import Hide from "./Hide/Hide";
+import { IIcon, IIconSize } from "./interfaceIcon";
 import Save from "./Save/Save";
 import Share from "./Share/Share";
 
 interface IPropsIcon {
-    type: string;
+    name: IIcon;
+    size: IIconSize;
 }
 
-function Icon({ type }: IPropsIcon) {
-    switch (type) {
+function Icon({ name, size }: IPropsIcon) {
+    switch (name) {
         case "comments":
-            return <Comments />;
+            return <Comments size={size} />;
         case "share":
-            return <Share />;
+            return <Share size={size} />;
         case "hide":
-            return <Hide />;
+            return <Hide size={size} />;
         case "save":
-            return <Save />;
+            return <Save size={size} />;
         case "complain":
-            return <Complain />;
+            return <Complain size={size} />;
 
         default:
             return <></>;
