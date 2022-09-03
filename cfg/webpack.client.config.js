@@ -1,5 +1,5 @@
 const path = require("path");
-const { HotModuleReplacementPlugin } = require("webpack");
+const { HotModuleReplacementPlugin, DefinePlugin } = require("webpack");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 //для запуска без express
@@ -9,6 +9,8 @@ const NODE_ENV = process.env.NODE_ENV;
 const IS_DEV = NODE_ENV === "development";
 const IS_PROD = NODE_ENV === "production";
 const GLOBAL_CSS_REGEXP = /\.global\.css$/;
+const DEV_PLAGINS = [new CleanWebpackPlugin(), new HotModuleReplacementPlugin()];
+const COMMON_PLAGINS = [new DefinePlugin({ "process.env.CLIENT_ID": `'${process.env.CLIENT_ID}'` })];
 
 function setDevtools() {
     if (IS_DEV) return "eval";
@@ -61,7 +63,7 @@ module.exports = {
         },
     },
     devtool: setDevtools(),
-    plugins: IS_DEV ? [new CleanWebpackPlugin(), new HotModuleReplacementPlugin()] : [],
+    plugins: IS_DEV ? DEV_PLAGINS.concat(COMMON_PLAGINS) : COMMON_PLAGINS,
 
     // Для запуска без express
 
