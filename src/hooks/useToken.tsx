@@ -9,5 +9,5 @@ export function useToken() {
         }
     }, []);
 
-    return token;
+    return [token];
 }

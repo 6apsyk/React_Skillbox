@@ -9,7 +9,7 @@ import { Header } from "./shared/Header";
 import { Layout } from "./shared/Layout";
 
 const App = () => {
-    const token = useToken();
+    const [token] = useToken();
 
     return (
         <Layout>

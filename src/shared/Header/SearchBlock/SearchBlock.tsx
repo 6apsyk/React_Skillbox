@@ -2,11 +2,9 @@ import axios from "axios";
 import React from "react";
 import styles from "./searchblock.css";
 import { UserBlock } from "./UserBlock";
-
 interface ISearchBlockProps {
     token: string;
 }
-
 interface IUserData {
     name?: string;
     iconImg?: string;
@@ -20,7 +18,7 @@ export function SearchBlock({ token }: ISearchBlockProps) {
         axios
             .get("https://oauth.reddit.com/api/v1/me", {
                 headers: {
-                    Authorization: `Bearer ${token}`,
+                    Authorization: `bearer ${token}`,
                 },
             })
             .then(response => {
