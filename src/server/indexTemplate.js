@@ -1,5 +1,4 @@
-
-export const indexTemplate = (content) => {
+export const indexTemplate = (content, token) => {
     return `
     <!DOCTYPE html>
     <html lang="en">
@@ -9,11 +8,13 @@ export const indexTemplate = (content) => {
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <title>SkillBox</title>
             <script src="/static/client.js" type="application/javascript"></script>
+            <script>
+                window.__token__='${token}'
+            </script>
         </head>
         <body>
             <div id="root">${content}</div>
         </body>
     </html>
-    `
-}
-
+    `;
+};
