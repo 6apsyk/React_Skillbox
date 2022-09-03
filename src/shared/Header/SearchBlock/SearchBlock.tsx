@@ -12,21 +12,21 @@ interface IUserData {
 
 export function SearchBlock({ token }: ISearchBlockProps) {
     const [data, setData] = React.useState<IUserData>({});
-    console.log("token", token);
 
     React.useEffect(() => {
-        axios
-            .get("https://oauth.reddit.com/api/v1/me", {
-                headers: {
-                    Authorization: `bearer ${token}`,
-                },
-            })
-            .then(response => {
-                console.log("response", response);
-                const dataUser = response.data;
-                setData({ name: dataUser.name, iconImg: dataUser.icon_img });
-            })
-            .catch(() => console.log("ошибка получения данных о пользователе"));
+        if (token && token.length > 1) {
+            axios
+                .get("https://oauth.reddit.com/api/v1/me", {
+                    headers: {
+                        Authorization: `bearer ${token}`,
+                    },
+                })
+                .then(response => {
+                    const dataUser = response.data;
+                    setData({ name: dataUser.name, iconImg: dataUser.icon_img });
+                })
+                .catch(() => console.log("ошибка получения данных о пользователе"));
+        }
     }, [token]);
 
     return (
