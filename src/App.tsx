@@ -8,6 +8,7 @@ import { Content } from "./shared/Content";
 import { Header } from "./shared/Header";
 import { Layout } from "./shared/Layout";
 import { tokenContext } from "./shared/context/tokenContext";
+import { UserContextProvider } from "./shared/context/userContext";
 
 const App = () => {
     const [token] = useToken();
@@ -16,12 +17,14 @@ const App = () => {
 
     return (
         <Provider value={token}>
-            <Layout>
-                <Header />
-                <Content>
-                    <CardList />
-                </Content>
-            </Layout>
+            <UserContextProvider>
+                <Layout>
+                    <Header />
+                    <Content>
+                        <CardList />
+                    </Content>
+                </Layout>
+            </UserContextProvider>
         </Provider>
     );
 };
