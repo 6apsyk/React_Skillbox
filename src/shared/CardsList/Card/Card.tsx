@@ -5,7 +5,18 @@ import { Menu } from "./Menu";
 import { Preview } from "./Preview";
 import { TextContent } from "./TextContent";
 
-export function Card() {
+interface IData {
+    id: string;
+}
+interface IPost {
+    data: IData;
+    kind: string;
+}
+interface IPropsCard {
+    post: IPost;
+}
+
+export function Card({ post }: IPropsCard) {
     return (
         <li className={styles.card}>
             <TextContent />
