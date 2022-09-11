@@ -9,6 +9,7 @@ import { Header } from "./shared/Header";
 import { Layout } from "./shared/Layout";
 import { tokenContext } from "./shared/context/tokenContext";
 import { UserContextProvider } from "./shared/context/userContext";
+import { PostsContextProvider } from "./shared/context/postsContext";
 
 const App = () => {
     const [token] = useToken();
@@ -18,12 +19,14 @@ const App = () => {
     return (
         <Provider value={token}>
             <UserContextProvider>
-                <Layout>
-                    <Header />
-                    <Content>
-                        <CardList />
-                    </Content>
-                </Layout>
+                <PostsContextProvider>
+                    <Layout>
+                        <Header />
+                        <Content>
+                            <CardList />
+                        </Content>
+                    </Layout>
+                </PostsContextProvider>
             </UserContextProvider>
         </Provider>
     );
